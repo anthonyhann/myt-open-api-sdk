@@ -29,6 +29,7 @@ import (
 	"time"
 
 	"github.com/go-resty/resty/v2"
+
 	"github.com/maiyatian/delivery/myt-go-sdk/consts"
 	"github.com/maiyatian/delivery/myt-go-sdk/utils"
 	"github.com/maiyatian/delivery/myt-go-sdk/vars"
