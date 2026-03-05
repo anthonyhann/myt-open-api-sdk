@@ -1,0 +1,30 @@
+# Maven
+/target/
+/.mvn/
+/mvnw
+/mvnw.cmd
+
+# IDE
+/.idea/
+/.vscode/
+/*.iml
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Test reports
+/surefire-reports/
+/failsafe-reports/

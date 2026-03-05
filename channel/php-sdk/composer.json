@@ -1,0 +1,33 @@
+{
+    "name": "maiyatian/channel-sdk",
+    "description": "麦芽田渠道开放平台PHP SDK",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maiyatian",
+            "email": "support@maiyatian.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Maiyatian\\Channel\\PhpSdk\\": "./"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Maiyatian\\Channel\\PhpSdk\\Tests\\": "./tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    }
+}

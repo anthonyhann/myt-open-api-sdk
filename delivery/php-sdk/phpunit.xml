@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.5/phpunit.xsd"
+         bootstrap="tests/bootstrap.php"
+         cacheResultFile="tests/.phpunit.result.cache"
+         executionOrder="depends,defects"
+         forceCoversAnnotation="false"
+         beStrictAboutCoversAnnotation="true"
+         beStrictAboutOutputDuringTests="true"
+         beStrictAboutTodoAnnotatedTests="true"
+         convertDeprecationsToExceptions="true"
+         failOnRisky="true"
+         failOnWarning="true"
+         verbose="true">
+    <testsuites>
+        <testsuite name="Unit Tests">
+            <directory suffix="Test.php">./tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Integration Tests">
+            <directory suffix="Test.php">./tests/Integration</directory>
+        </testsuite>
+        <testsuite name="Feature Tests">
+            <directory suffix="Test.php">./tests/Feature</directory>
+        </testsuite>
+    </testsuites>
+    
+    <coverage cacheDirectory="tests/.phpunit.coverage.cache"
+              processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">./client</directory>
+            <directory suffix=".php">./consts</directory>
+            <directory suffix=".php">./vars</directory>
+            <directory suffix=".php">./models</directory>
+            <directory suffix=".php">./generics</directory>
+        </include>
+        <exclude>
+            <directory>./vendor</directory>
+            <directory>./tests</directory>
+            <directory>./examples</directory>
+        </exclude>
+        <report>
+            <html outputDirectory="tests/coverage-html" lowUpperBound="35" highLowerBound="70"/>
+            <text outputFile="php://stdout" showUncoveredFiles="false"/>
+            <clover outputFile="tests/coverage.xml"/>
+        </report>
+    </coverage>
+    
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="DEBUG" value="false"/>
+        <ini name="memory_limit" value="512M"/>
+        <ini name="error_reporting" value="E_ALL"/>
+        <ini name="display_errors" value="1"/>
+        <ini name="display_startup_errors" value="1"/>
+    </php>
+    
+    <logging>
+        <testdoxHtml outputFile="tests/testdox.html"/>
+        <testdoxText outputFile="tests/testdox.txt"/>
+        <junit outputFile="tests/junit.xml"/>
+    </logging>
+</phpunit>

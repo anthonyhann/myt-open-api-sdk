@@ -1,0 +1,23 @@
+{
+    "name": "maiyatian/delivery-sdk-php",
+    "description": "Maiyatian Delivery Open Platform PHP SDK",
+    "type": "library",
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Maiyatian\Delivery\SDK\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Maiyatian\Delivery\SDK\Tests\": "tests/"
+        }
+    },
+    "minimum-stability": "stable"
+}
