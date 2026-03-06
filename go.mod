@@ -1,4 +1,4 @@
-module github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk
+module github.com/anthonyhann/myt-open-api-sdk
 
 go 1.25.0
 
