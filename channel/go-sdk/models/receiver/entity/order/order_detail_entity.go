@@ -1,7 +1,7 @@
 // Package entity 提供麦芽田主动推送给三方服务的数据结构定义
 package entity
 
-import orderBase "github.com/maiyatian/channel/myt-go-sdk/models/sender/entity/order"
+import orderBase "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/sender/entity/order"
 
 // OrderDetailReq 查询订单详情请求参数（三方接收麦芽田请求）
 // 麦芽田向三方查询订单详情时的请求参数

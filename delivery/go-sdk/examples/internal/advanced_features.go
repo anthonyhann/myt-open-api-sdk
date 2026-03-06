@@ -9,10 +9,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/maiyatian/delivery/myt-go-sdk/client"
-	"github.com/maiyatian/delivery/myt-go-sdk/models/sender/api"
-	entityDelivery "github.com/maiyatian/delivery/myt-go-sdk/models/sender/entity/delivery"
-	entityExpress "github.com/maiyatian/delivery/myt-go-sdk/models/sender/entity/express"
+	"github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/client"
+	"github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/models/sender/api"
+	entityDelivery "github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/models/sender/entity/delivery"
+	entityExpress "github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/models/sender/entity/express"
 )
 
 // BatchDeliveryStatusExample 批量配送状态更新示例

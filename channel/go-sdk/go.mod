@@ -1,9 +1,7 @@
-module github.com/maiyatian/channel/myt-go-sdk
+module github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk
 
-go 1.24.0
+go 1.25.0
 
-require (
-	github.com/go-resty/resty/v2 v2.17.1
-)
+require github.com/go-resty/resty/v2 v2.17.2
 
-require golang.org/x/net v0.48.0 // indirect
+require golang.org/x/net v0.51.0 // indirect

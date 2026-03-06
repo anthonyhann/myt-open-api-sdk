@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/maiyatian/channel/myt-go-sdk/client"
-	"github.com/maiyatian/channel/myt-go-sdk/models/sender/api"
-	entityOrder "github.com/maiyatian/channel/myt-go-sdk/models/sender/entity/order"
+	"github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/client"
+	"github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/sender/api"
+	entityOrder "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/sender/entity/order"
 )
 
 // RefundManagementExample 退款管理示例

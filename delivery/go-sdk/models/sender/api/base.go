@@ -13,10 +13,10 @@ package api
 import (
 	"context"
 
-	"github.com/maiyatian/delivery/myt-go-sdk/client"
-	entity "github.com/maiyatian/delivery/myt-go-sdk/models/sender/entity/auth"
-	entityDelivery "github.com/maiyatian/delivery/myt-go-sdk/models/sender/entity/delivery"
-	entityExpress "github.com/maiyatian/delivery/myt-go-sdk/models/sender/entity/express"
+	"github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/client"
+	entity "github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/models/sender/entity/auth"
+	entityDelivery "github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/models/sender/entity/delivery"
+	entityExpress "github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/models/sender/entity/express"
 )
 
 // IDeliverySender 配送服务发送端接口定义

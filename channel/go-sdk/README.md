@@ -61,7 +61,7 @@
 ### 安装
 
 ```bash
-go get github.com/maiyatian/channel/myt-go-sdk
+go get github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk
 ```
 
 ### 5分钟上手
@@ -76,8 +76,8 @@ import (
     "log"
     "time"
     
-    "github.com/maiyatian/channel/myt-go-sdk/client"
-    "github.com/maiyatian/channel/myt-go-sdk/models/sender/api"
+    "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/client"
+    "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/sender/api"
 )
 
 func main() {
@@ -101,7 +101,7 @@ func main() {
 
 ```bash
 # 克隆项目
-git clone https://github.com/maiyatian/channel/myt-go-sdk.git
+git clone https://github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk.git
 cd myt-go-sdk
 
 # 运行基础示例
@@ -135,7 +135,7 @@ go run examples/main.go -type all
 #### 步骤 1：引导商户授权
 
 ```go
-import authEntity "github.com/maiyatian/channel/myt-go-sdk/models/sender/entity/auth"
+import authEntity "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/sender/entity/auth"
 
 // 组装授权页面 URL
 authURL := fmt.Sprintf(
@@ -202,7 +202,7 @@ if err != nil {
 #### 推送新订单
 
 ```go
-import orderEntity "github.com/maiyatian/channel/myt-go-sdk/models/sender/entity/order"
+import orderEntity "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/sender/entity/order"
 
 // 当用户在三方平台下单并支付成功后，推送订单给麦芽田
 orderReq := &orderEntity.CreateOrderReq{
@@ -335,7 +335,7 @@ resp, err := sender.SelfDeliveryChange(ctx, token, deliveryReq)
 #### 批量推送骑手位置
 
 ```go
-import senderOrder "github.com/maiyatian/channel/myt-go-sdk/models/sender/entity/order"
+import senderOrder "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/sender/entity/order"
 
 locationReq := &senderOrder.MultiRiderLocationReq{
     Locations: []*senderOrder.RiderLocation{
@@ -416,7 +416,7 @@ resp, err := sender.OrderRefunded(ctx, token, refundedReq)
 ### 5. 门店信息查询
 
 ```go
-import shopEntity "github.com/maiyatian/channel/myt-go-sdk/models/sender/entity/shop"
+import shopEntity "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/sender/entity/shop"
 
 // 查询门店在麦芽田平台的信息和状态
 shopReq := &shopEntity.ShopInfoReq{
@@ -456,8 +456,8 @@ import (
     "encoding/json"
     "net/http"
     
-    receiverEntity "github.com/maiyatian/channel/myt-go-sdk/models/receiver/entity/order"
-    senderEntity "github.com/maiyatian/channel/myt-go-sdk/models/sender/entity/order"
+    receiverEntity "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/receiver/entity/order"
+    senderEntity "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/sender/entity/order"
 )
 
 // 三方需要提供此回调接口给麦芽田
@@ -696,7 +696,7 @@ config := client.NewConfigBuilder().
 ### 订单状态（OrderStatus）
 
 ```go
-import "github.com/maiyatian/channel/myt-go-sdk/models/types"
+import "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/types"
 
 const (
     types.StatusCreated    = "CREATED"     // 待确认

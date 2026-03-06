@@ -13,8 +13,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/maiyatian/delivery/myt-go-sdk/client"
-	entity "github.com/maiyatian/delivery/myt-go-sdk/models/sender/entity/express"
+	"github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/client"
+	entity "github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/models/sender/entity/express"
 )
 
 const (

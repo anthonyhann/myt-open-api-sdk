@@ -35,7 +35,7 @@
 ```go
 package main
 
-import "github.com/maiyatian/channel/myt-go-sdk/examples"
+import "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/examples"
 
 func main() {
     // 运行所有基础示例
@@ -48,7 +48,7 @@ func main() {
 ```go
 package main
 
-import "github.com/maiyatian/channel/myt-go-sdk/examples"
+import "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/examples"
 
 func main() {
     // 运行所有高级功能示例
@@ -61,7 +61,7 @@ func main() {
 ```go
 package main
 
-import "github.com/maiyatian/channel/myt-go-sdk/examples"
+import "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/examples"
 
 func main() {
     // 运行回调接口示例

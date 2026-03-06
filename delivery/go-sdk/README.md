@@ -2,7 +2,7 @@
 
 [![Go Version](https://img.shields.io/badge/Go-%3E%3D1.24-blue.svg)](https://golang.org/dl/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![SDK Version](https://img.shields.io/badge/SDK-v1.0.0-brightgreen.svg)](https://github.com/maiyatian/delivery/myt-go-sdk/releases)
+[![SDK Version](https://img.shields.io/badge/SDK-v1.0.0-brightgreen.svg)](https://github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/releases)
 
 **麦芽田配送开放平台 Go SDK** - 为配送服务商和物流公司提供专业的配送状态同步和快递轨迹回传能力。
 
@@ -41,7 +41,7 @@
 ### 安装
 
 ```bash
-go get github.com/maiyatian/delivery/myt-go-sdk
+go get github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk
 ```
 
 ### 基础用法
@@ -54,10 +54,10 @@ import (
     "log"
     "time"
 
-    "github.com/maiyatian/delivery/myt-go-sdk/client"
-    "github.com/maiyatian/delivery/myt-go-sdk/models/sender/api"
-    entityAuth "github.com/maiyatian/delivery/myt-go-sdk/models/sender/entity/auth"
-    entityDelivery "github.com/maiyatian/delivery/myt-go-sdk/models/sender/entity/delivery"
+    "github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/client"
+    "github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/models/sender/api"
+    entityAuth "github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/models/sender/entity/auth"
+    entityDelivery "github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/models/sender/entity/delivery"
 )
 
 func main() {
@@ -211,7 +211,7 @@ myt-go-sdk/
 ### 配送状态枚举
 
 ```go
-import "github.com/maiyatian/delivery/myt-go-sdk/models/types"
+import "github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/models/types"
 
 // 配送状态
 const (

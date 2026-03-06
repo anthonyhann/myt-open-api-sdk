@@ -8,11 +8,11 @@ import (
 	"log"
 	"time"
 
-	"github.com/maiyatian/channel/myt-go-sdk/client"
-	"github.com/maiyatian/channel/myt-go-sdk/models/sender/api"
-	entityAuth "github.com/maiyatian/channel/myt-go-sdk/models/sender/entity/auth"
-	entityOrder "github.com/maiyatian/channel/myt-go-sdk/models/sender/entity/order"
-	entityShop "github.com/maiyatian/channel/myt-go-sdk/models/sender/entity/shop"
+	"github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/client"
+	"github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/sender/api"
+	entityAuth "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/sender/entity/auth"
+	entityOrder "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/sender/entity/order"
+	entityShop "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/sender/entity/shop"
 )
 
 // BasicUsageExample 基础使用示例
@@ -23,11 +23,11 @@ func BasicUsageExample() {
 	// 1. 创建客户端配置
 	config := client.NewConfigBuilder().
 		BaseURL("https://open-api-test.maiyatian.com"). // 测试环境地址
-		APIKey("your_app_key").                         // 替换为你的应用密钥
-		APISecret("your_app_secret").                   // 替换为你的应用密钥
-		RequestTimeout(30 * time.Second).               // 请求超时 30 秒
-		RetryMaxAttempts(3).                            // 最大重试 3 次
-		EnableLogging(true).                            // 启用日志记录
+		APIKey("your_app_key"). // 替换为你的应用密钥
+		APISecret("your_app_secret"). // 替换为你的应用密钥
+		RequestTimeout(30 * time.Second). // 请求超时 30 秒
+		RetryMaxAttempts(3). // 最大重试 3 次
+		EnableLogging(true). // 启用日志记录
 		Build()
 
 	// 2. 创建 Sender 客户端（用于主动调用麦芽田 API）

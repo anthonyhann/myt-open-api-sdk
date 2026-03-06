@@ -8,7 +8,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/maiyatian/delivery/myt-go-sdk/examples/internal"
+	"github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/examples/internal"
 )
 
 func main() {
@@ -104,7 +104,7 @@ func showHelp() {
     go run examples/main.go -type all       # 运行所有示例
 
 更多信息:
-    https://github.com/maiyatian/delivery/myt-go-sdk
+    https://github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk
 `)
 }
 

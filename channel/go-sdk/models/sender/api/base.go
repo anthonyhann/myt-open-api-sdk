@@ -5,10 +5,10 @@ package api
 import (
 	"context"
 
-	"github.com/maiyatian/channel/myt-go-sdk/client"
-	entity "github.com/maiyatian/channel/myt-go-sdk/models/sender/entity/auth"
-	entityOrder "github.com/maiyatian/channel/myt-go-sdk/models/sender/entity/order"
-	entityShop "github.com/maiyatian/channel/myt-go-sdk/models/sender/entity/shop"
+	"github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/client"
+	entity "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/sender/entity/auth"
+	entityOrder "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/sender/entity/order"
+	entityShop "github.com/anthonyhann/myt-open-api-sdk/channel/go-sdk/models/sender/entity/shop"
 )
 
 // IChannelSender 渠道发送接口

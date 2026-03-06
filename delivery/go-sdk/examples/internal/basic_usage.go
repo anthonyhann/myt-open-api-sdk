@@ -8,11 +8,11 @@ import (
 	"log"
 	"time"
 
-	"github.com/maiyatian/delivery/myt-go-sdk/client"
-	"github.com/maiyatian/delivery/myt-go-sdk/models/sender/api"
-	entityAuth "github.com/maiyatian/delivery/myt-go-sdk/models/sender/entity/auth"
-	entityDelivery "github.com/maiyatian/delivery/myt-go-sdk/models/sender/entity/delivery"
-	entityExpress "github.com/maiyatian/delivery/myt-go-sdk/models/sender/entity/express"
+	"github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/client"
+	"github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/models/sender/api"
+	entityAuth "github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/models/sender/entity/auth"
+	entityDelivery "github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/models/sender/entity/delivery"
+	entityExpress "github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/models/sender/entity/express"
 )
 
 // BasicUsageExample 基础使用示例
@@ -23,11 +23,11 @@ func BasicUsageExample() {
 	// 1. 创建客户端配置
 	config := client.NewConfigBuilder().
 		BaseURL("https://open-api-test.maiyatian.com"). // 测试环境地址
-		APIKey("your_app_key").                         // 替换为你的应用密钥
-		APISecret("your_app_secret").                   // 替换为你的应用密钥
-		RequestTimeout(30 * time.Second).               // 请求超时 30 秒
-		RetryMaxAttempts(3).                            // 最大重试 3 次
-		EnableLogging(true).                            // 启用日志记录
+		APIKey("your_app_key"). // 替换为你的应用密钥
+		APISecret("your_app_secret"). // 替换为你的应用密钥
+		RequestTimeout(30 * time.Second). // 请求超时 30 秒
+		RetryMaxAttempts(3). // 最大重试 3 次
+		EnableLogging(true). // 启用日志记录
 		Build()
 
 	// 2. 创建配送 Sender 客户端（用于主动调用麦芽田 API）
@@ -75,7 +75,7 @@ func AuthorizationExample() {
 		Code:      "mock_auth_code_from_callback", // 从回调地址获取的授权码
 		StoreId:   "delivery_service_001",         // 配送服务商ID
 		Mobile:    "13000020201",                  // 业务分类
-		City:      "北京市",                          // 配送服务商名称
+		City:      "北京市",                       // 配送服务商名称
 		CityCode:  "110100",                       // 配送类型：express-快递，local-同城
 	}
 

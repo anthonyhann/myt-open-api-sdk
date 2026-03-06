@@ -30,9 +30,9 @@ import (
 
 	"github.com/go-resty/resty/v2"
 
-	"github.com/maiyatian/delivery/myt-go-sdk/consts"
-	"github.com/maiyatian/delivery/myt-go-sdk/utils"
-	"github.com/maiyatian/delivery/myt-go-sdk/vars"
+	"github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/consts"
+	"github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/utils"
+	"github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/vars"
 )
 
 // SDKVersion SDK 版本号
@@ -558,5 +558,5 @@ func (h *HTTPClientManger) generateRequestID() string {
 		hex.EncodeToString(b[4:6]),  // 4 位
 		hex.EncodeToString(b[6:8]),  // 4 位
 		hex.EncodeToString(b[8:10]), // 4 位
-		hex.EncodeToString(b[10:]))  // 12 位
+		hex.EncodeToString(b[10:])) // 12 位
 }

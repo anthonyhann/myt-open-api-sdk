@@ -28,7 +28,7 @@
 ```go
 package main
 
-import "github.com/maiyatian/delivery/myt-go-sdk/examples"
+import "github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/examples"
 
 func main() {
     // 运行所有基础示例
@@ -41,7 +41,7 @@ func main() {
 ```go
 package main
 
-import "github.com/maiyatian/delivery/myt-go-sdk/examples"
+import "github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/examples"
 
 func main() {
     // 运行所有高级功能示例
@@ -59,7 +59,7 @@ cd sdk-generator/generated-sdks/delivery/go-sdk
 cat > main.go << 'EOF'
 package main
 
-import "github.com/maiyatian/delivery/myt-go-sdk/examples"
+import "github.com/anthonyhann/myt-open-api-sdk/delivery/go-sdk/examples"
 
 func main() {
     examples.RunAllExamples()
